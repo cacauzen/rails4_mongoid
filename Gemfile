@@ -3,6 +3,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
 
+# Bower Rails is a front end assets manager
+gem "bower-rails"
+
+# HAML gem
+gem 'haml-rails', '>= 0.3.4', :group => :development
+
+# Use angular.js for rendering views
+gem 'angularjs-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
 
