@@ -3,20 +3,18 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
 
-# Bower Rails is a front end assets manager
-gem "bower-rails"
-
 # HAML gem
 gem 'haml-rails', '>= 0.3.4', :group => :development
 
-# Use angular.js for rendering views
-gem 'angularjs-rails'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'bootstrap-sass', '3.2.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
+# Use Devise for User accounts and User authentication
+gem 'devise', '>= 3.2.4'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -26,6 +24,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+gem "bower-rails", "~> 0.10.0"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

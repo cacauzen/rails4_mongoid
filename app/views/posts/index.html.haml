@@ -1,3 +1,7 @@
+%div{"ng-repeat" => "post in posts"}
+
+%a{:href => "#{url_for(:action => 'index')}/{{row.permalink}}"}
+
 %h1 Listing posts
 %table
   %thead
