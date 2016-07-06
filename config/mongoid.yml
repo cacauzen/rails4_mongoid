@@ -1,5 +1,7 @@
 development:
   # Configure available database sessions. (required)
+    host: localhost
+    database: managementdb
   sessions:
     # Defines the default session. (required)
     default:
@@ -18,7 +20,7 @@ development:
         # Change the default consistency model to :eventual or :strong.
         # :eventual will send reads to secondaries, :strong sends everything
         # to master. (default: :eventual)
-        consistency: :strong
+        # consistency: :eventual
 
         # How many times Moped should attempt to retry an operation after
         # failure. (default: 30)
@@ -65,9 +67,8 @@ development:
 test:
   sessions:
     default:
-      database: rails4_mongoid_test
-      hosts:
-        - localhost:27017
+       host: localhost
+       database: managementdb
       options:
         consistency: :strong
         # In the test environment we lower the retries and retry interval to
